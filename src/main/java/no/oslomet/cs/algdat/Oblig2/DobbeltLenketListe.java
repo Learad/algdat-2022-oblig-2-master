@@ -205,7 +205,29 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     @Override
     public T fjern(int indeks) {
-        throw new UnsupportedOperationException();
+        if (indeks < 0 || indeks >= antall){
+            throw new IndexOutOfBoundsException("Feil indeks");
+        }
+        T fjern;
+        if (antall == 1){
+            fjern = hode.verdi;
+            hode = hale = null;
+        } else if (indeks == 0){
+            fjern = hode.verdi;
+            hode = hode.neste;
+            hode.forrige = null;
+        } else if (indeks < antall-1){
+            Node<T> p = finnNode(indeks);
+            fjern = p.verdi;
+            p.forrige.neste = p.neste;
+            p.neste.forrige = p.forrige;
+            p = null;
+        } else {
+            fjern = hale.verdi;
+            hale = hale.forrige;
+            hale.neste = null;
+        }
+        return fjern;
     }
 
     @Override
