@@ -131,6 +131,12 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     @Override
     public void leggInn(int indeks, T verdi) {
+        if (verdi == null){
+            throw new NullPointerException("Verdien er null");
+        }
+        if (indeks < 0 || indeks > antall){
+            throw new IndexOutOfBoundsException("Feil indeks");
+        }
         if (indeks == 0){
             if (antall == 0){
                 hode = new Node<>(verdi, null, null);
@@ -146,7 +152,16 @@ public class DobbeltLenketListe<T> implements Liste<T> {
             ny.forrige = hale;
             hale.neste = ny;
             hale = ny;
+        } else {
+            Node ny = new Node(verdi);
+            Node p = finnNode(indeks-1);
+            ny.neste = p.neste;
+            ny.forrige = p;
+            p.neste = ny;
+            ny.neste.forrige = ny;
         }
+        antall++;
+        endringer++;
     }
 
     @Override
