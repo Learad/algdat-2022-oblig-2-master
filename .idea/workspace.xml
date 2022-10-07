@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd78c8b7-ab9d-462b-93a9-80307474af70" name="Changes" comment="Andre commit av oppgave 6">
+    <list default="true" id="cd78c8b7-ab9d-462b-93a9-80307474af70" name="Changes" comment="Fikset warnings, finpusset på kode.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/oslomet/cs/algdat/Oblig2/DobbeltLenketListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/oslomet/cs/algdat/Oblig2/DobbeltLenketListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664723277279</updated>
       <workItem from="1664723279238" duration="7355000" />
-      <workItem from="1664969941978" duration="6246000" />
+      <workItem from="1664969941978" duration="8945000" />
     </task>
     <task id="LOCAL-00001" summary="Første commit av oppgave 5">
       <created>1664970966683</created>
@@ -209,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664972930403</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Siste commit av oppgave 8, alle oppgaver ferdig.">
+      <created>1665140242016</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665140242016</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fikset warnings, finpusset på kode.">
+      <created>1665140709659</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665140709660</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +244,8 @@
     <MESSAGE value="Første commit av oppgave 5" />
     <MESSAGE value="Første commit av oppgave 6" />
     <MESSAGE value="Andre commit av oppgave 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Andre commit av oppgave 6" />
+    <MESSAGE value="Siste commit av oppgave 8, alle oppgaver ferdig." />
+    <MESSAGE value="Fikset warnings, finpusset på kode." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fikset warnings, finpusset på kode." />
   </component>
 </project>
